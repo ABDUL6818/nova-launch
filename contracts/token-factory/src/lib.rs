@@ -61,6 +61,8 @@ mod proposal_queue;
 mod proposal_queue_test;
 mod proposal_state_machine;
 mod proposal_type_queue;
+#[cfg(test)]
+mod proposal_type_queue_max_length_test;
 mod staking;
 #[cfg(test)]
 mod staking_integration_test;
@@ -70,6 +72,8 @@ mod storage_migration;
 mod test_helpers;
 mod timelock;
 mod token_creation;
+#[cfg(test)]
+mod token_creation_snapshot_test;
 mod treasury;
 mod types;
 mod validation;
@@ -97,6 +101,10 @@ mod payload_validation_fuzz_test;
 // #[cfg(test)]
 // mod token_lifecycle_tests; // Temporarily disabled due to pre-existing compilation errors (stale vs. current contract API)
 mod snapshot;
+#[cfg(test)]
+mod snapshot_counter_test;
+#[cfg(test)]
+mod burn_schedule_counter_test;
 
 #[cfg(test)]
 // mod buyback_integration_test;
